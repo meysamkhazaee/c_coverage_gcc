@@ -1,0 +1,8 @@
+1- gcc -o sample_notCoverage.exe sample.c 
+2- gcc -o sample_Coverage.exe sample.c --coverage
+3- gcc -fprofile-arcs -ftest-coverage -g -o sample_instrumented.exe sample.c
+4- gcov sample.c  
+5- gcovr -r . --html-details -o coverage_report.html
+
+.gcno file is generated when the source file is compiled with the GCC -ftest-coverage option. It contains information to reconstruct the basic block graphs and assign source line numbers to blocks. 
+.gcda file is generated when a program containing object files built with the GCC -fprofile-arcs option is executed.
