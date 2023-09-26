@@ -1,0 +1,1 @@
+gcc -o sample_build_without_coverage.exe sample.c

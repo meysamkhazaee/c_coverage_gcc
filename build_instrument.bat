@@ -1,0 +1,1 @@
+gcc -fprofile-arcs -ftest-coverage -g -o sample_instrumented.exe sample.c

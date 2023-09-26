@@ -1,0 +1,1 @@
+gcovr -r . --html-details -o coverage_report.html

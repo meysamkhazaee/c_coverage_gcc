@@ -1,0 +1,1 @@
+gcc -o sample_build_with_coverage.exe sample.c --coverage
