@@ -1,11 +1,18 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-int main() {
-  int num1, num2;
-  
-  printf("Enter two numbers: ");
-  scanf("%d %d", &num1, &num2);
+int main(int argc, char *argv[]) 
+{
+  if (argc != 4) {
+    printf("Invalid number of arguments. Please provide three numbers.\n");
+    return 1;
+  }
 
+  int num1 = atoi(argv[1]);
+  int num2 = atoi(argv[2]);
+  int num3 = atoi(argv[3]);
+
+  // Compare num1 and num2
   if (num1 > num2) {
     printf("%d is greater than %d.\n", num1, num2);
   } else if (num1 < num2) {
@@ -14,12 +21,10 @@ int main() {
     printf("Both numbers are equal.\n");
   }
 
-  printf("\nEnter a number to check if it's positive or negative: ");
-  scanf("%d", &num1);
-
-  if (num1 > 0) {
+  // Check num3 for positivity or negativity
+  if (num3 > 0) {
     printf("The number is positive.\n");
-  } else if (num1 < 0) {
+  } else if (num3 < 0) {
     printf("The number is negative.\n");
   } else {
     printf("The number is zero.\n");
