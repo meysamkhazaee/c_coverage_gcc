@@ -3,6 +3,6 @@ the simple bash script performs a code coverage analysis on a program named simp
 
 Just by running **_"runner.sh"_** file.
 
-# requirement:
+# Requirement:
 - *gcc*
 - *gcov*
