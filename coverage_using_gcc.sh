@@ -1,3 +1,4 @@
+# mshadow: to use this bash script file you should install gcc compiler
 # Change to the current directory
 cd $PWD
 

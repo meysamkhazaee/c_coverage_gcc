@@ -1,4 +1,4 @@
-# mshadow: to use this bash script file you should install llvm(clang)
+# mshadow: to use this bash script file you should install cbmc tools from github
 # Change to the current directory
 cd $PWD
 
@@ -12,6 +12,6 @@ mkdir result
 cp sample.c result/
 cd result
 
-clang -S -emit-llvm sample.c -o sample.ll
-opt -dot-cfg -disable-output -enable-new-pm=0 sample.ll
-dot -Tpng -ofunction.png .main.dot
+goto-cc sample.c -o sample.gb
+goto-instrument sample.gb --dot sample.dot
+dot -Tpng my.dot -o my.png
