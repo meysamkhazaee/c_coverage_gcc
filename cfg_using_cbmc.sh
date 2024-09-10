@@ -14,4 +14,4 @@ cd result
 
 goto-cc sample.c -o sample.gb
 goto-instrument sample.gb --dot sample.dot
-dot -Tpng my.dot -o my.png
+dot -Tpng sample.dot -o sample.png
