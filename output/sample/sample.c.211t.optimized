@@ -1,0 +1,337 @@
+
+;; Function main (main, funcdef_no=14, decl_uid=2273, cgraph_uid=14, symbol_order=14)
+
+main (int argc, char * * argv)
+{
+  int num3;
+  int num2;
+  int num1;
+  struct FILE * fptr;
+  int num3.15;
+  int num3.14;
+  int num3.13;
+  int num3.12;
+  int num3.11;
+  int num1.10;
+  int num2.9;
+  int num2.8;
+  int num1.7;
+  int num1.6;
+  int num2.5;
+  int num2.4;
+  int num1.3;
+  int num3.2;
+  char * D.2300;
+  char * * D.2299;
+  int num2.1;
+  char * D.2297;
+  char * * D.2296;
+  int num1.0;
+  char * D.2294;
+  char * * D.2293;
+  char * D.2289;
+  char * * D.2288;
+  int D.2287;
+  int D.2284;
+  char * D.2283;
+  char * D.2280;
+  int _1;
+  char * _8;
+  char * _11;
+  int _13;
+  int _15;
+  char * * _16;
+  char * _17;
+  int num1.0_19;
+  char * * _21;
+  char * _22;
+  int num2.1_24;
+  char * * _26;
+  char * _27;
+  int num3.2_29;
+  int _31;
+  char * * _33;
+  char * _34;
+  int num1.3_40;
+  int num2.4_41;
+  int num2.5_42;
+  int num1.6_43;
+  int num1.7_45;
+  int num2.8_46;
+  int num2.9_47;
+  int num1.10_48;
+  int num3.11_51;
+  int num3.12_52;
+  int num3.13_54;
+  int num3.14_55;
+  int num3.15_57;
+  int _59;
+  long long int PROF_edge_counter_63;
+  long long int PROF_edge_counter_64;
+  long long int PROF_edge_counter_65;
+  long long int PROF_edge_counter_66;
+  long long int PROF_edge_counter_67;
+  long long int PROF_edge_counter_68;
+  long long int PROF_edge_counter_69;
+  long long int PROF_edge_counter_70;
+  long long int PROF_edge_counter_71;
+  long long int PROF_edge_counter_72;
+  long long int PROF_edge_counter_73;
+  long long int PROF_edge_counter_74;
+  long long int PROF_edge_counter_75;
+  long long int PROF_edge_counter_76;
+  long long int PROF_edge_counter_77;
+  long long int PROF_edge_counter_78;
+  long long int PROF_edge_counter_79;
+  long long int PROF_edge_counter_80;
+  long long int PROF_edge_counter_81;
+  long long int PROF_edge_counter_82;
+  long long int PROF_edge_counter_83;
+  long long int PROF_edge_counter_84;
+  long long int PROF_edge_counter_85;
+  long long int PROF_edge_counter_86;
+  long long int PROF_edge_counter_87;
+  long long int PROF_edge_counter_88;
+  long long int PROF_edge_counter_89;
+  long long int PROF_edge_counter_90;
+  long long int PROF_edge_counter_91;
+  long long int PROF_edge_counter_92;
+  long long int PROF_edge_counter_93;
+  long long int PROF_edge_counter_94;
+  long long int PROF_edge_counter_95;
+  long long int PROF_edge_counter_96;
+  long long int PROF_edge_counter_97;
+  long long int PROF_edge_counter_98;
+  long long int PROF_edge_counter_99;
+  long long int PROF_edge_counter_100;
+  long long int PROF_edge_counter_101;
+  long long int PROF_edge_counter_102;
+  long long int PROF_edge_counter_103;
+  long long int PROF_edge_counter_104;
+  long long int PROF_edge_counter_105;
+  long long int PROF_edge_counter_106;
+  long long int PROF_edge_counter_107;
+  long long int PROF_edge_counter_108;
+  long long int PROF_edge_counter_109;
+  long long int PROF_edge_counter_110;
+  long long int PROF_edge_counter_111;
+  long long int PROF_edge_counter_112;
+
+  <bb 2>:
+  PROF_edge_counter_63 = __gcov0.main[0];
+  PROF_edge_counter_64 = PROF_edge_counter_63 + 1;
+  __gcov0.main[0] = PROF_edge_counter_64;
+  _8 = *argv_7(D);
+  printf ("Program name: %s\n", _8);
+  if (argc_10(D) <= 1)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+
+  <bb 3>:
+  PROF_edge_counter_65 = __gcov0.main[1];
+  PROF_edge_counter_66 = PROF_edge_counter_65 + 1;
+  __gcov0.main[1] = PROF_edge_counter_66;
+  _11 = *argv_7(D);
+  printf ("Usage: %s .not input\n", _11);
+  _13 = 1;
+  goto <bb 20>;
+
+  <bb 4>:
+  if (argc_10(D) == 2)
+    goto <bb 5>;
+  else
+    goto <bb 6>;
+
+  <bb 5>:
+  PROF_edge_counter_67 = __gcov0.main[2];
+  PROF_edge_counter_68 = PROF_edge_counter_67 + 1;
+  __gcov0.main[2] = PROF_edge_counter_68;
+  _31 = argc_10(D) + -1;
+  printf ("Number of arguments: %d\nRead From File\n", _31);
+  PROF_edge_counter_69 = __gcov0.main[3];
+  PROF_edge_counter_70 = PROF_edge_counter_69 + 1;
+  __gcov0.main[3] = PROF_edge_counter_70;
+  _33 = argv_7(D) + 4;
+  _34 = *_33;
+  fptr_36 = fopen (_34, "r");
+  PROF_edge_counter_71 = __gcov0.main[4];
+  PROF_edge_counter_72 = PROF_edge_counter_71 + 1;
+  __gcov0.main[4] = PROF_edge_counter_72;
+  fscanf (fptr_36, "%d", &num1);
+  PROF_edge_counter_73 = __gcov0.main[5];
+  PROF_edge_counter_74 = PROF_edge_counter_73 + 1;
+  __gcov0.main[5] = PROF_edge_counter_74;
+  fscanf (fptr_36, "%d", &num2);
+  PROF_edge_counter_75 = __gcov0.main[6];
+  PROF_edge_counter_76 = PROF_edge_counter_75 + 1;
+  __gcov0.main[6] = PROF_edge_counter_76;
+  fscanf (fptr_36, "%d", &num3);
+  goto <bb 9>;
+
+  <bb 6>:
+  if (argc_10(D) == 4)
+    goto <bb 7>;
+  else
+    goto <bb 8>;
+
+  <bb 7>:
+  PROF_edge_counter_77 = __gcov0.main[7];
+  PROF_edge_counter_78 = PROF_edge_counter_77 + 1;
+  __gcov0.main[7] = PROF_edge_counter_78;
+  _16 = argv_7(D) + 4;
+  _17 = *_16;
+  num1.0_19 = atoi (_17);
+  PROF_edge_counter_81 = __gcov0.main[9];
+  PROF_edge_counter_82 = PROF_edge_counter_81 + 1;
+  __gcov0.main[9] = PROF_edge_counter_82;
+  num1 = num1.0_19;
+  _21 = argv_7(D) + 8;
+  _22 = *_21;
+  num2.1_24 = atoi (_22);
+  PROF_edge_counter_83 = __gcov0.main[10];
+  PROF_edge_counter_84 = PROF_edge_counter_83 + 1;
+  __gcov0.main[10] = PROF_edge_counter_84;
+  num2 = num2.1_24;
+  _26 = argv_7(D) + 12;
+  _27 = *_26;
+  num3.2_29 = atoi (_27);
+  num3 = num3.2_29;
+  PROF_edge_counter_85 = __gcov0.main[11];
+  PROF_edge_counter_86 = PROF_edge_counter_85 + 1;
+  __gcov0.main[11] = PROF_edge_counter_86;
+  goto <bb 9>;
+
+  <bb 8>:
+  PROF_edge_counter_79 = __gcov0.main[8];
+  PROF_edge_counter_80 = PROF_edge_counter_79 + 1;
+  __gcov0.main[8] = PROF_edge_counter_80;
+  __builtin_puts (&"Invalid number of arguments. Please provide three numbers."[0]);
+  _15 = 1;
+  PROF_edge_counter_87 = __gcov0.main[12];
+  PROF_edge_counter_88 = PROF_edge_counter_87 + 1;
+  __gcov0.main[12] = PROF_edge_counter_88;
+  goto <bb 20>;
+
+  <bb 9>:
+  num1.3_40 = num1;
+  num2.4_41 = num2;
+  if (num1.3_40 > num2.4_41)
+    goto <bb 10>;
+  else
+    goto <bb 11>;
+
+  <bb 10>:
+  PROF_edge_counter_89 = __gcov0.main[13];
+  PROF_edge_counter_90 = PROF_edge_counter_89 + 1;
+  __gcov0.main[13] = PROF_edge_counter_90;
+  num2.5_42 = num2;
+  num1.6_43 = num1;
+  printf ("num1 = %d is greater than num2 = %d.\n", num1.6_43, num2.5_42);
+  goto <bb 14>;
+
+  <bb 11>:
+  num1.7_45 = num1;
+  num2.8_46 = num2;
+  if (num1.7_45 < num2.8_46)
+    goto <bb 12>;
+  else
+    goto <bb 13>;
+
+  <bb 12>:
+  PROF_edge_counter_91 = __gcov0.main[14];
+  PROF_edge_counter_92 = PROF_edge_counter_91 + 1;
+  __gcov0.main[14] = PROF_edge_counter_92;
+  num2.9_47 = num2;
+  num1.10_48 = num1;
+  printf ("num1 = %d is less than num2 = %d.\n", num1.10_48, num2.9_47);
+  PROF_edge_counter_95 = __gcov0.main[16];
+  PROF_edge_counter_96 = PROF_edge_counter_95 + 1;
+  __gcov0.main[16] = PROF_edge_counter_96;
+  goto <bb 14>;
+
+  <bb 13>:
+  PROF_edge_counter_93 = __gcov0.main[15];
+  PROF_edge_counter_94 = PROF_edge_counter_93 + 1;
+  __gcov0.main[15] = PROF_edge_counter_94;
+  __builtin_puts (&"Both numbers are equal."[0]);
+  PROF_edge_counter_97 = __gcov0.main[17];
+  PROF_edge_counter_98 = PROF_edge_counter_97 + 1;
+  __gcov0.main[17] = PROF_edge_counter_98;
+
+  <bb 14>:
+  num3.11_51 = num3;
+  if (num3.11_51 > 0)
+    goto <bb 15>;
+  else
+    goto <bb 16>;
+
+  <bb 15>:
+  PROF_edge_counter_99 = __gcov0.main[18];
+  PROF_edge_counter_100 = PROF_edge_counter_99 + 1;
+  __gcov0.main[18] = PROF_edge_counter_100;
+  num3.12_52 = num3;
+  printf ("%d is positive.\n", num3.12_52);
+  goto <bb 19>;
+
+  <bb 16>:
+  num3.13_54 = num3;
+  if (num3.13_54 < 0)
+    goto <bb 17>;
+  else
+    goto <bb 18>;
+
+  <bb 17>:
+  PROF_edge_counter_101 = __gcov0.main[19];
+  PROF_edge_counter_102 = PROF_edge_counter_101 + 1;
+  __gcov0.main[19] = PROF_edge_counter_102;
+  num3.14_55 = num3;
+  printf ("%d is negative.\n", num3.14_55);
+  PROF_edge_counter_105 = __gcov0.main[21];
+  PROF_edge_counter_106 = PROF_edge_counter_105 + 1;
+  __gcov0.main[21] = PROF_edge_counter_106;
+  goto <bb 19>;
+
+  <bb 18>:
+  PROF_edge_counter_103 = __gcov0.main[20];
+  PROF_edge_counter_104 = PROF_edge_counter_103 + 1;
+  __gcov0.main[20] = PROF_edge_counter_104;
+  num3.15_57 = num3;
+  printf ("%d is zero.\n", num3.15_57);
+  PROF_edge_counter_107 = __gcov0.main[22];
+  PROF_edge_counter_108 = PROF_edge_counter_107 + 1;
+  __gcov0.main[22] = PROF_edge_counter_108;
+
+  <bb 19>:
+  _59 = 0;
+  PROF_edge_counter_109 = __gcov0.main[23];
+  PROF_edge_counter_110 = PROF_edge_counter_109 + 1;
+  __gcov0.main[23] = PROF_edge_counter_110;
+
+  <bb 20>:
+  # _1 = PHI <_13(3), _15(8), _59(19)>
+  num1 ={v} {CLOBBER};
+  num2 ={v} {CLOBBER};
+  num3 ={v} {CLOBBER};
+
+<L21>:
+  PROF_edge_counter_111 = __gcov0.main[24];
+  PROF_edge_counter_112 = PROF_edge_counter_111 + 1;
+  __gcov0.main[24] = PROF_edge_counter_112;
+  return _1;
+
+}
+
+
+
+;; Function _GLOBAL__sub_I_65535_0_main (_GLOBAL__sub_I_65535_0_main, funcdef_no=15, decl_uid=2360, cgraph_uid=0, symbol_order=23)
+
+_GLOBAL__sub_I_65535_0_main ()
+{
+  <bb 2>:
+  __gcov_init (&*LPBX0);
+  return;
+
+}
+
+

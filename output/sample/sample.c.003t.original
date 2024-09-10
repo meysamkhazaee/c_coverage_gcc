@@ -1,0 +1,209 @@
+
+;; Function getc (null)
+;; enabled by -tree-original
+
+
+{
+  return  --__F->_cnt >= 0 ? (int) (unsigned char) *__F->_ptr++  : _filbuf (__F);
+}
+
+
+;; Function putc (null)
+;; enabled by -tree-original
+
+
+{
+  return  --__F->_cnt >= 0 ? (int) (unsigned char) (*__F->_ptr++  = (char) __c) : _flsbuf (__c, __F);
+}
+
+
+;; Function getchar (null)
+;; enabled by -tree-original
+
+
+{
+  return  --_iob[0]._cnt >= 0 ? (int) (unsigned char) *_iob[0]._ptr++  : _filbuf (&_iob[0]);
+}
+
+
+;; Function putchar (null)
+;; enabled by -tree-original
+
+
+{
+  return  --_iob[1]._cnt >= 0 ? (int) (unsigned char) (*_iob[1]._ptr++  = (char) __c) : _flsbuf (__c, &_iob[1]);
+}
+
+
+;; Function _get_output_format (null)
+;; enabled by -tree-original
+
+
+{
+  return __mingw_get_output_format ();
+}
+
+
+;; Function _set_output_format (null)
+;; enabled by -tree-original
+
+
+{
+  return __mingw_set_output_format (__style);
+}
+
+
+;; Function _get_printf_count_output (null)
+;; enabled by -tree-original
+
+
+{
+  return __mingw_get_printf_count_output ();
+}
+
+
+;; Function _set_printf_count_output (null)
+;; enabled by -tree-original
+
+
+{
+  return __mingw_set_printf_count_output (__mode);
+}
+
+
+;; Function fopen64 (null)
+;; enabled by -tree-original
+
+
+{
+  return fopen (filename, mode);
+}
+
+
+;; Function ftello64 (null)
+;; enabled by -tree-original
+
+
+{
+  fpos_t __pos;
+
+    fpos_t __pos;
+  return fgetpos (stream, &__pos) == 0 ? (__off64_t) __pos : -1;
+}
+
+
+;; Function mkstemp (null)
+;; enabled by -tree-original
+
+
+{
+  return __mingw_mkstemp (0, __filename_template);
+}
+
+
+;; Function mkdtemp (null)
+;; enabled by -tree-original
+
+
+{
+  return __mingw_mkdtemp (__dirname_template);
+}
+
+
+;; Function setenv (null)
+;; enabled by -tree-original
+
+
+{
+  return __mingw_setenv (__n, __v, __f);
+}
+
+
+;; Function unsetenv (null)
+;; enabled by -tree-original
+
+
+{
+  return __mingw_setenv (__name, 0B, 1);
+}
+
+
+;; Function main (null)
+;; enabled by -tree-original
+
+
+{
+  struct FILE * fptr;
+  int num1;
+  int num2;
+  int num3;
+
+  printf ((const char *) "Program name: %s\n", *argv);
+    struct FILE * fptr;
+    int num1;
+    int num2;
+    int num3;
+  if (argc <= 1)
+    {
+      printf ((const char *) "Usage: %s .not input\n", *argv);
+      return 1;
+    }
+  else
+    {
+      if (argc == 2)
+        {
+          printf ((const char *) "Number of arguments: %d\nRead From File\n", argc + -1);
+          fptr = fopen ((const char *) *(argv + 4), (const char *) "r");
+          fscanf (fptr, (const char *) "%d", &num1);
+          fscanf (fptr, (const char *) "%d", &num2);
+          fscanf (fptr, (const char *) "%d", &num3);
+        }
+      else
+        {
+          if (argc == 4)
+            {
+              num1 = atoi ((const char *) *(argv + 4));
+              num2 = atoi ((const char *) *(argv + 8));
+              num3 = atoi ((const char *) *(argv + 12));
+            }
+          else
+            {
+              printf ((const char *) "Invalid number of arguments. Please provide three numbers.\n");
+              return 1;
+            }
+        }
+    }
+  if (num1 > num2)
+    {
+      printf ((const char *) "num1 = %d is greater than num2 = %d.\n", num1, num2);
+    }
+  else
+    {
+      if (num1 < num2)
+        {
+          printf ((const char *) "num1 = %d is less than num2 = %d.\n", num1, num2);
+        }
+      else
+        {
+          printf ((const char *) "Both numbers are equal.\n");
+        }
+    }
+  if (num3 > 0)
+    {
+      printf ((const char *) "%d is positive.\n", num3);
+    }
+  else
+    {
+      if (num3 < 0)
+        {
+          printf ((const char *) "%d is negative.\n", num3);
+        }
+      else
+        {
+          printf ((const char *) "%d is zero.\n", num3);
+        }
+    }
+  return 0;
+}
+return 0;
+

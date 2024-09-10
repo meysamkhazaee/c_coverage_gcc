@@ -2,24 +2,33 @@
 # Change to the current directory
 cd $PWD
 
+# Check if the correct number of arguments are provided
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 <input_file.c>"
+    exit 1
+fi
+
+INPUT_FILE=$1   # First argument: input C file
+
+# Extract file name without extension
+BASENAME=$(basename "$INPUT_FILE" .c)
+echo "BASENAME = $BASENAME"
+
 # Remove the "output" folder if it exists
 if [ -d output ]; then
     rm -rf output
 fi
 
-read -p "Enter the input 'C' file name: " input_file
-read -p "Enter the output folder name: " output_name
-
 # Create a new "output" folder
 mkdir output
 cd output
-mkdir $output_name
-cd $output_name
+mkdir $BASENAME
+cd $BASENAME
 cd ../..
-cp $input_file output/$output_name
-cd output/$output_name
+cp $INPUT_FILE output/$BASENAME
+cd output/$BASENAME
 
-gcc -fprofile-arcs -ftest-coverage -fdump-tree-cfg -fdump-tree-all-graph -o $output_name $input_file
+gcc -fprofile-arcs -ftest-coverage -fdump-tree-cfg -fdump-tree-all-graph -o $BASENAME $INPUT_FILE
 
 # gcc -fdump-tree-all-graph sample.c -o sample
 # gcc -fdump-tree-cfg -fdump-tree-vcg -fdump-tree-alias sample.c -o sample

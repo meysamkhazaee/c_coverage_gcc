@@ -1,0 +1,214 @@
+
+;; Function main (main, funcdef_no=14, decl_uid=2273, cgraph_uid=14, symbol_order=14)
+
+Released 0 names, 0.00%, removed 0 holes
+main (int argc, char * * argv)
+{
+  int num3;
+  int num2;
+  int num1;
+  struct FILE * fptr;
+  int num3.15;
+  int num3.14;
+  int num3.13;
+  int num3.12;
+  int num3.11;
+  int num1.10;
+  int num2.9;
+  int num2.8;
+  int num1.7;
+  int num1.6;
+  int num2.5;
+  int num2.4;
+  int num1.3;
+  int num3.2;
+  char * D.2300;
+  char * * D.2299;
+  int num2.1;
+  char * D.2297;
+  char * * D.2296;
+  int num1.0;
+  char * D.2294;
+  char * * D.2293;
+  char * D.2289;
+  char * * D.2288;
+  int D.2287;
+  int D.2284;
+  char * D.2283;
+  char * D.2280;
+  int _1;
+  char * _8;
+  char * _11;
+  int _13;
+  int _15;
+  char * * _16;
+  char * _17;
+  int num1.0_19;
+  char * * _21;
+  char * _22;
+  int num2.1_24;
+  char * * _26;
+  char * _27;
+  int num3.2_29;
+  int _31;
+  char * * _33;
+  char * _34;
+  int num1.3_40;
+  int num2.4_41;
+  int num2.5_42;
+  int num1.6_43;
+  int num1.7_45;
+  int num2.8_46;
+  int num2.9_47;
+  int num1.10_48;
+  int num3.11_51;
+  int num3.12_52;
+  int num3.13_54;
+  int num3.14_55;
+  int num3.15_57;
+  int _59;
+
+  <bb 2>:
+  _8 = *argv_7(D);
+  printf ("Program name: %s\n", _8);
+  if (argc_10(D) <= 1)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+
+  <bb 3>:
+  _11 = *argv_7(D);
+  printf ("Usage: %s .not input\n", _11);
+  _13 = 1;
+  goto <bb 20>;
+
+  <bb 4>:
+  if (argc_10(D) == 2)
+    goto <bb 5>;
+  else
+    goto <bb 6>;
+
+  <bb 5>:
+  _31 = argc_10(D) + -1;
+  printf ("Number of arguments: %d\nRead From File\n", _31);
+  _33 = argv_7(D) + 4;
+  _34 = *_33;
+  fptr_36 = fopen (_34, "r");
+  fscanf (fptr_36, "%d", &num1);
+  fscanf (fptr_36, "%d", &num2);
+  fscanf (fptr_36, "%d", &num3);
+  goto <bb 9>;
+
+  <bb 6>:
+  if (argc_10(D) == 4)
+    goto <bb 7>;
+  else
+    goto <bb 8>;
+
+  <bb 7>:
+  _16 = argv_7(D) + 4;
+  _17 = *_16;
+  num1.0_19 = atoi (_17);
+  num1 = num1.0_19;
+  _21 = argv_7(D) + 8;
+  _22 = *_21;
+  num2.1_24 = atoi (_22);
+  num2 = num2.1_24;
+  _26 = argv_7(D) + 12;
+  _27 = *_26;
+  num3.2_29 = atoi (_27);
+  num3 = num3.2_29;
+  goto <bb 9>;
+
+  <bb 8>:
+  __builtin_puts (&"Invalid number of arguments. Please provide three numbers."[0]);
+  _15 = 1;
+  goto <bb 20>;
+
+  <bb 9>:
+  num1.3_40 = num1;
+  num2.4_41 = num2;
+  if (num1.3_40 > num2.4_41)
+    goto <bb 10>;
+  else
+    goto <bb 11>;
+
+  <bb 10>:
+  num2.5_42 = num2;
+  num1.6_43 = num1;
+  printf ("num1 = %d is greater than num2 = %d.\n", num1.6_43, num2.5_42);
+  goto <bb 14>;
+
+  <bb 11>:
+  num1.7_45 = num1;
+  num2.8_46 = num2;
+  if (num1.7_45 < num2.8_46)
+    goto <bb 12>;
+  else
+    goto <bb 13>;
+
+  <bb 12>:
+  num2.9_47 = num2;
+  num1.10_48 = num1;
+  printf ("num1 = %d is less than num2 = %d.\n", num1.10_48, num2.9_47);
+  goto <bb 14>;
+
+  <bb 13>:
+  __builtin_puts (&"Both numbers are equal."[0]);
+
+  <bb 14>:
+  num3.11_51 = num3;
+  if (num3.11_51 > 0)
+    goto <bb 15>;
+  else
+    goto <bb 16>;
+
+  <bb 15>:
+  num3.12_52 = num3;
+  printf ("%d is positive.\n", num3.12_52);
+  goto <bb 19>;
+
+  <bb 16>:
+  num3.13_54 = num3;
+  if (num3.13_54 < 0)
+    goto <bb 17>;
+  else
+    goto <bb 18>;
+
+  <bb 17>:
+  num3.14_55 = num3;
+  printf ("%d is negative.\n", num3.14_55);
+  goto <bb 19>;
+
+  <bb 18>:
+  num3.15_57 = num3;
+  printf ("%d is zero.\n", num3.15_57);
+
+  <bb 19>:
+  _59 = 0;
+
+  <bb 20>:
+  # _1 = PHI <_13(3), _15(8), _59(19)>
+  num1 ={v} {CLOBBER};
+  num2 ={v} {CLOBBER};
+  num3 ={v} {CLOBBER};
+
+<L21>:
+  return _1;
+
+}
+
+
+
+;; Function _GLOBAL__sub_I_65535_0_main (_GLOBAL__sub_I_65535_0_main, funcdef_no=15, decl_uid=2360, cgraph_uid=0, symbol_order=23)
+
+Released 0 names, 0.00%, removed 0 holes
+_GLOBAL__sub_I_65535_0_main ()
+{
+  <bb 2>:
+  __gcov_init (&*LPBX0);
+  return;
+
+}
+
+
