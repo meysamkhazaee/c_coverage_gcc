@@ -12,21 +12,17 @@ INPUT_FILE=$1   # First argument: input C file
 
 # Extract file name without extension
 BASENAME=$(basename "$INPUT_FILE" .c)
-echo "BASENAME = $BASENAME"
+cd output
+mkdir gcc
+cd gcc
 
-# Remove the "output" folder if it exists
-if [ -d output ]; then
-    rm -rf output
+if [ -d $BASENAME ]; then
+    rm -rf $BASENAME
 fi
 
-# Create a new "output" folder
-mkdir output
-cd output
 mkdir $BASENAME
 cd $BASENAME
-cd ../..
-cp $INPUT_FILE output/$BASENAME
-cd output/$BASENAME
+cp ../../../../$INPUT_FILE output/$BASENAME
 
 gcc -fprofile-arcs -ftest-coverage -fdump-tree-cfg -fdump-tree-all-graph -o $BASENAME $INPUT_FILE
 
